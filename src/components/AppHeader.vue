@@ -1,6 +1,58 @@
 <script>
 export default{
     name: "AppHeader",
+    data() {
+        return {
+            logo: '../../imgs/dc-logo.png',
+            links: [
+            {
+                text: "CHARACTERS",
+                url: "",
+                current: true,
+            },
+            {
+                text: "COMICS",
+                url: "",
+                current: false,
+            },
+            {
+                text: "MOVIES",
+                url: "",
+                current: false,
+            },
+            {
+                text: "TV",
+                url: "",
+                current: false,
+            },
+            {
+                text: "GAMES",
+                url: "",
+                current: false,
+            },
+            {
+                text: "VIDEOS",
+                url: "",
+                current: false,
+            },
+            {
+                text: "FANS",
+                url: "",
+                current: false,
+            },
+            {
+                text: "NEWS",
+                url: "",
+                current: false,
+            },
+            {
+                text: "SHOP",
+                url: "",
+                current: false,
+            },
+            ]
+        }
+    }
 
 }
 </script>
@@ -17,36 +69,10 @@ export default{
             <nav>
 
                 <ul>
-                    <li>
-                        <a href="">CHARACTERS</a>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a :href=" link.url " :class="{active: link.current}"> {{ link.text }}</a>
                     </li>
-                    <li>
-                        <a href="">COMICS</a>
-                    </li>
-                    <li>
-                        <a href="">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="">TV</a>
-                    </li>
-                    <li>
-                        <a href="">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="">COLLECTABLES</a>
-                    </li>
-                    <li>
-                        <a href="">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="">FANS</a>
-                    </li>
-                    <li>
-                        <a href="">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="">SHOP</a>
-                    </li>
+                    
                 </ul>
 
             </nav>
@@ -84,7 +110,7 @@ li {
 
     li a {
         display: inline;
-        padding: 2px;
+        padding: 0 10px;
         text-decoration: none;
     }
 
