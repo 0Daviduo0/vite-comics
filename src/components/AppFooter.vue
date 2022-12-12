@@ -22,6 +22,7 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 footer{
     display: flex;
@@ -30,6 +31,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: $general-padding;
 
     .account-and-socials{
         display: flex;

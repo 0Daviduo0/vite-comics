@@ -21,28 +21,31 @@ export default{
                         <a href="">CHARACTERS</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">COMICS</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">MOVIES</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">TV</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">GAMES</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">COLLECTABLES</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">VIDEOS</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">FANS</a>
                     </li>
                     <li>
-                        <a href="">CHARACTERS</a>
+                        <a href="">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="">SHOP</a>
                     </li>
                 </ul>
 
@@ -59,12 +62,32 @@ export default{
 
 header{
     display: flex;
+    justify-content: space-around;
     height: 100px;
+    align-items: center;
     outline: 1px solid black;
-}
+    padding: $general-padding;
 
-logo{
+    .logo{
         outline: 1px solid red;
     }
+}
+
+ul {
+    list-style: none;
+    margin: 3px;
+}
+
+li {
+    display: inline;
+}
+
+    li a {
+        display: inline;
+        padding: 2px;
+        text-decoration: none;
+    }
+
+
 
 </style>
