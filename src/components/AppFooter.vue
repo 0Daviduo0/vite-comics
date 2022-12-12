@@ -9,14 +9,46 @@ export default{
     <footer>
 
     </footer>
+    <div class="account-and-socials">
+
+        <div class="signup">
+
+        </div>
+        <div class="socials">
+            
+        </div>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
 
 footer{
     display: flex;
-    height: 100px;
+    height: 400px;
     background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .account-and-socials{
+        display: flex;
+        justify-content: space-between;
+        background-color: #303030;
+        background-color: #303030;
+    }
+        .signup{
+            height: 100px;
+            width: 50%;
+            outline: 1px solid black;
+        }
+
+        .socials{
+            height: 100px;
+            width: 50%;
+            outline: 1px solid black;
+        }
+
 }
 
 </style>
