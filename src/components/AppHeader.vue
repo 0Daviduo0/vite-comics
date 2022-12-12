@@ -61,7 +61,7 @@ export default{
     <header>
 
         <div class="logo">
-
+            <img :src="logo" alt="">
         </div>
 
         <div class="lista">
@@ -86,6 +86,11 @@ export default{
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -95,7 +100,8 @@ header{
     padding: $general-padding;
 
     .logo{
-        outline: 1px solid red;
+        width: 80px;
+        // outline: 1px solid red;
     }
 }
 
