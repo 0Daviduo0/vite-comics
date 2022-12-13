@@ -1,58 +1,62 @@
 <script>
 export default{
     name: "AppHeader",
-    data() {
-        return {
-            logo: '../../src/assets/dc-logo.png',
-            links: [
-            {
-                text: "CHARACTERS",
-                url: "",
-                current: true,
-            },
-            {
-                text: "COMICS",
-                url: "",
-                current: false,
-            },
-            {
-                text: "MOVIES",
-                url: "",
-                current: false,
-            },
-            {
-                text: "TV",
-                url: "",
-                current: false,
-            },
-            {
-                text: "GAMES",
-                url: "",
-                current: false,
-            },
-            {
-                text: "VIDEOS",
-                url: "",
-                current: false,
-            },
-            {
-                text: "FANS",
-                url: "",
-                current: false,
-            },
-            {
-                text: "NEWS",
-                url: "",
-                current: false,
-            },
-            {
-                text: "SHOP",
-                url: "",
-                current: false,
-            },
-            ]
-        }
+    props: {
+        logo: String,
+        links: Array,
     }
+    // data() {
+    //     return {
+    //         logo: '../../src/assets/dc-logo.png',
+    //         links: [
+    //         {
+    //             text: "CHARACTERS",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "COMICS",
+    //             url: "",
+    //             current: true,
+    //         },
+    //         {
+    //             text: "MOVIES",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "TV",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "GAMES",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "VIDEOS",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "FANS",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "NEWS",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         {
+    //             text: "SHOP",
+    //             url: "",
+    //             current: false,
+    //         },
+    //         ]
+    //     }
+    // }
 
 }
 </script>

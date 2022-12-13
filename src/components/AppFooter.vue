@@ -50,6 +50,28 @@ export default {
                     ]
                 },
             ],
+            socials: [
+            {
+                SocialIcon: "../../src/assets/footer-facebook.png",
+                SocialName: "Facebook",
+            },
+            {
+                SocialIcon: "../../src/assets/footer-twitter.png",
+                SocialName: "twitter",
+            },
+            {
+                SocialIcon: "../../src/assets/footer-youtube.png",
+                SocialName: "youtube",
+            },
+            {
+                SocialIcon: "../../src/assets/footer-pinterest.png",
+                SocialName: "pinterest",
+            },
+            {
+                SocialIcon: "../../src/assets/footer-periscope.png",
+                SocialName: "periscope",
+            },
+            ],
         }
     }
 
@@ -117,7 +139,7 @@ export default {
 
             <div class="menu">
             <div class="title">
-                DC COMICS
+                DC
             </div>
 
             <div class="object">
@@ -208,6 +230,14 @@ export default {
         </div>
         <div class="socials">
 
+            <div class="followUs">
+                FOLLOW US
+            </div>
+
+            <div class="socialIcon" v-for="(social, index) in socials" :key="index">
+                <img :src=" social.SocialIcon " :alt=" social.SocialName ">
+            </div>
+
         </div>
 
     </div>
@@ -227,7 +257,7 @@ footer {
     flex-direction: row;
     padding: $general-padding;
     padding-top: 80px;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     overflow: hidden;
     position: relative;
@@ -268,7 +298,7 @@ footer {
 .signup {
     height: 100px;
     width: 50%;
-    outline: 1px solid black;
+    // outline: 1px solid black;
     display: flex;
     padding: $general-padding;
     align-items: center;
@@ -281,8 +311,23 @@ footer {
 }
 
 .socials {
+    padding: $general-padding;
     height: 100px;
     width: 50%;
-    outline: 1px solid black;
+    // outline: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .followUs{
+        padding: 20px;
+        color: $main-color2;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .socialIcon{
+        padding: 10px;
+    }
 }
 </style>

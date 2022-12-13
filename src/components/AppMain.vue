@@ -1,33 +1,36 @@
 <script>
 export default{
     name: "AppMain",
-    data() {
-        return {
-            components: [
-            {
-                image: "../../src/assets/buy-comics-digital-comics.png",
-                text: "DIGITAL COMICS",
-            },
-            {
-                image: "../../src/assets/buy-comics-merchandise.png",
-                text: "DC MERCHANDISE",
-            },
-            {
-                image: "../../src/assets/buy-comics-subscriptions.png",
-                text: "SUBSCRIPTION",
-            },
-            {
-                image: "../../src/assets/buy-comics-shop-locator.png",
-                text: "COMIC SHOP LOCATOR",
-            },
-            {
-                image: "../../src/assets/buy-dc-power-visa.svg",
-                text: "DC POWER VISA",
-            },
-            ],
-            
-        }
+    props: {
+        components: Array,
     }
+    // data() {
+    //     return {
+    //         components: [
+    //         {
+    //             image: "../../src/assets/buy-comics-digital-comics.png",
+    //             text: "DIGITAL COMICS",
+    //         },
+    //         {
+    //             image: "../../src/assets/buy-comics-merchandise.png",
+    //             text: "DC MERCHANDISE",
+    //         },
+    //         {
+    //             image: "../../src/assets/buy-comics-subscriptions.png",
+    //             text: "SUBSCRIPTION",
+    //         },
+    //         {
+    //             image: "../../src/assets/buy-comics-shop-locator.png",
+    //             text: "COMIC SHOP LOCATOR",
+    //         },
+    //         {
+    //             image: "../../src/assets/buy-dc-power-visa.svg",
+    //             text: "DC POWER VISA",
+    //         },
+    //         ],
+            
+    //     }
+    // }
 
 }
 </script>
