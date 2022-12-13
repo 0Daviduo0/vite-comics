@@ -100,7 +100,7 @@ header{
     justify-content: space-around;
     height: 100px;
     align-items: center;
-    outline: 1px solid black;
+    // outline: 1px solid black;
     padding: $general-padding;
 
     .logo{

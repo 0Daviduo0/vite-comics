@@ -3,6 +3,8 @@ export default{
     name: "AppMain",
     props: {
         components: Array,
+        jumbotron: String,
+        comics: Array,
     }
     // data() {
     //     return {
@@ -37,6 +39,9 @@ export default{
 
 <template>
     <main>
+        <div class="jumbotron">
+            
+        </div>
         <div class="content">
 
         --> Content goes here &lt--
@@ -62,7 +67,17 @@ export default{
 main{
     display: flex;
     flex-direction: column;
-    outline: 1px solid black;
+    // outline: 1px solid black;
+
+    .jumbotron{
+        height: 500px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        // Da fixara con "jumbotron" in App.vue usando prop
+        background-image: url("../../src/assets/jumbotron.jpg");
+        background-repeat: no-repeat;
+    }
 
     .content {
         height: 150px;
