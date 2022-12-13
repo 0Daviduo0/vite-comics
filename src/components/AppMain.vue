@@ -3,7 +3,28 @@ export default{
     name: "AppMain",
     data() {
         return {
-            
+            components: [
+            {
+                image: "../../imgs/buy-comics-digital-comics.png",
+                text: "DIGITAL COMICS",
+            },
+            {
+                image: "../../imgs/buy-comics-merchandise.png",
+                text: "DC MERCHANDISE",
+            },
+            {
+                image: "../../imgs/buy-comics-subscriptions.png",
+                text: "SUBSCRIPTION",
+            },
+            {
+                image: "../../imgs/buy-comics-shop-locator.png",
+                text: "COMIC SHOP LOCATOR",
+            },
+            {
+                image: "../../imgs/buy-dc-power-visa.svg",
+                text: "DC POWER VISA",
+            },
+            ]
         }
     }
 
@@ -18,6 +39,13 @@ export default{
 
         </div>
         <div class="rapid_components">
+
+            <div class="component" v-for="(component, index) in components" :key="index">
+
+                <img :src="component.image" alt="">
+                <div class="title"> {{ component.text }} </div>
+
+            </div>
 
         </div>
 
@@ -45,6 +73,22 @@ main{
         background-color: $main-color2;
         display: flex;
         justify-content: center;
+
+        .component{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+            img{
+                height: 70px;
+            }
+
+            .title{
+                color: #fff;
+                margin-left: 20px;
+            }
     }
 }
 
