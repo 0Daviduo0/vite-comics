@@ -274,8 +274,8 @@ footer {
     align-items: center;
 
     .signup-button{
-        border: 3px blue solid;
-        padding: 10px 20px;
+        border: 3px $main-color2 solid;
+        padding: 15px;
         color: #fff;
     }
 }
