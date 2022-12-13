@@ -168,7 +168,7 @@ export default {
     <AppHeader :logo="AppHeaderLogo" :links="AppHeaderLinks"/>
   </header>
   <main>
-    <AppMain :components="AppMainComponents" :jumbotron="AppMainJumbo" :comics="AppMainComics"/>
+    <AppMain :components="AppMainComponents" :jumbotron="AppMainJumbo" :Card="AppMainComics"/>
   </main>
   <footer>
     <AppFooter/>
