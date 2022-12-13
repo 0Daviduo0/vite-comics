@@ -5,26 +5,27 @@ export default{
         return {
             components: [
             {
-                image: "../../imgs/buy-comics-digital-comics.png",
+                image: "../../src/assets/buy-comics-digital-comics.png",
                 text: "DIGITAL COMICS",
             },
             {
-                image: "../../imgs/buy-comics-merchandise.png",
+                image: "../../src/assets/buy-comics-merchandise.png",
                 text: "DC MERCHANDISE",
             },
             {
-                image: "../../imgs/buy-comics-subscriptions.png",
+                image: "../../src/assets/buy-comics-subscriptions.png",
                 text: "SUBSCRIPTION",
             },
             {
-                image: "../../imgs/buy-comics-shop-locator.png",
+                image: "../../src/assets/buy-comics-shop-locator.png",
                 text: "COMIC SHOP LOCATOR",
             },
             {
-                image: "../../imgs/buy-dc-power-visa.svg",
+                image: "../../src/assets/buy-dc-power-visa.svg",
                 text: "DC POWER VISA",
             },
-            ]
+            ],
+            
         }
     }
 
@@ -40,12 +41,12 @@ export default{
         </div>
         <div class="rapid_components">
 
-            <div class="component" v-for="(component, index) in components" :key="index">
+        <div class="component" v-for="(component, index) in components" :key="index">
 
-                <img :src="component.image" alt="">
-                <div class="title"> {{ component.text }} </div>
+            <img :src="component.image" alt="">
+            <div class="title"> {{ component.text }} </div>
 
-            </div>
+        </div>
 
         </div>
 
